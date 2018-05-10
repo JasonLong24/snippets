@@ -1,0 +1,36 @@
+snippet bash
+	#!/usr/bin/env bash
+
+snippet if
+	if [[ ${1:condition}  ]]; then
+	${0:${VISUAL}}
+	fi
+
+snippet elif
+	elif [[ ${1:condidtion} ]]; then
+		${0:${VISUAL}}
+
+snippet for
+	for (( ${2:i} = 0; $2 < ${1:amount}; $2++ )); do
+		${0:${VISUAL}}
+	done
+
+snippet case
+	case ${1:VALUE} in
+		${2:OF})
+			${0};;
+	esac
+
+snippet fun
+	function ${1:NAME}() {
+		${0:CODE}
+	}
+
+snippet var
+	${1:NAME}=$(${2:CODE})
+
+snippet val
+	${1:NAME}=${2:VALUE}
+
+snippet todo
+	# TODO: ${1:WHAT}`strftime("+%Y-%m-%d")`
