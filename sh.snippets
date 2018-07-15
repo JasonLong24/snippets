@@ -1,9 +1,12 @@
 snippet bash
 	#!/usr/bin/env bash
 
+snippet zsh
+	#!/usr/bin/env zsh
+
 snippet if
-	if [[ ${1:condition}  ]]; then
-	${0:${VISUAL}}
+	if [[ ${1:condition} ]]; then
+		${2:$}
 	fi
 
 snippet elif

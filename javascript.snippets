@@ -1,0 +1,34 @@
+snippet if
+	if(${1:condition}) {
+		${2:$}
+	}
+
+snippet elif
+	else if(${1:condition}) {
+		${2:$}
+	}
+
+snippet for
+	for(${2:i}=0; $2 < ${1:amount}; $2++) {
+		${0:${VISUAL}}
+	}
+
+snippet swt 
+	switch(${1:condition}) {
+		case ${2:$}
+	}
+
+snippet fun
+	function ${1:name}() {
+		${2:$}
+	}
+
+snippet winfun
+	window.${1:name} = function() {
+		${2:$}
+	}
+
+snippet docfun
+	document.${1:name} = function() {
+		${2:$}
+	}
